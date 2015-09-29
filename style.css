@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
 #header {
 	text-align: center;
 	font-family: helvetica;
@@ -11,46 +19,36 @@
 
 #container {
   text-align: center;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
 }
 
 #embed {
   margin: 0 auto -155px;
 }
 
-#footer {
+.footer {
   display: inline-block;
   position: fixed;
   bottom: 0;
-  height: 155px;
+  height: 4em;
+  width: 100%;
   text-align: center;
+  background-color: black;
+  color: white;
 }
 
-.input_box {
-	width: 70%;
-	height: 50px;
-	font-size: 20px;
-	float: center;
-	text-align: center;
-	padding-left: 1px;
-	padding-right: 1px;
-	margin-bottom: 20px;
-	border-style: solid;
-	border-color: black;
-	border-width: 1px;
-	font-family: helvetica, arial, sans serif;
-}
-
-#selectors {
-  border-radius: 15px;
+.footer-box {
   display: inline-block;
-  width: 80%;
-  margin: auto 10px;
-  text-align: center;
-  padding: 20px;
-  font-family: helvetica;
+  font-family: arial;
+  height: 100%;
 }
 
-/* The following is taken from Bootstrap */
+.push {
+  height: 4em;
+}
 
 .btn {
   display: inline-block;
